@@ -81,7 +81,7 @@ const MovieDetail = () => {
                 ? `${import.meta.env.VITE_IMAGE_BASE_URL}${movie.poster_path}`
                 : "https://via.placeholder.com/300x450?text=No+Image"
             }
-            className="img-fluid rounded border border-light"
+            className="img-fluid rounded border border-light mb-2"
             alt={movie.title}
           />
         </Col>
