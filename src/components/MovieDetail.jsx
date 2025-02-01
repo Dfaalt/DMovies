@@ -64,7 +64,7 @@ const MovieDetail = () => {
   }
 
   return (
-    <Container className="mt-4 bg-dark text-light py-4 min-vh-100">
+    <Container className="bg-dark text-light py-4 min-vh-100">
       <Button
         onClick={() => navigate(-1)}
         variant="outline-light"
