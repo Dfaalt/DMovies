@@ -10,7 +10,7 @@ const Navbar = () => {
     >
       <div className="container">
         <Link className="navbar-brand text-white fw-bold" to="/">
-          DfaaltMovies
+          DMovies
         </Link>
         <button
           className="navbar-toggler"
