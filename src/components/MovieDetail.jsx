@@ -73,7 +73,12 @@ const MovieDetail = () => {
         &larr; Back
       </Button>
 
-      <Row className="bg-secondary bg-opacity-25 p-4 rounded shadow-sm">
+      <Row
+        className="bg-secondary bg-opacity-25 p-4 rounded shadow-sm"
+        style={{
+          background: "linear-gradient(to right, #1a1a1a, #2d2d2d, #404040)",
+        }}
+      >
         <Col md={4}>
           <img
             src={
@@ -152,8 +157,6 @@ const MovieDetail = () => {
 
           {/* Movie Trailer */}
           <MovieTrailer movieId={id} />
-
-          
         </Col>
 
         {/* Movie Cast */}

@@ -71,7 +71,13 @@ const Movies = () => {
             key={`${movie.id}-${movies.indexOf(movie)}`}
             className="col mb-4"
           >
-            <div className="card h-100 shadow bg-secondary text-light">
+            <div
+              className="card h-100 shadow bg-secondary text-light"
+              style={{
+                background:
+                  "linear-gradient(to right, #1a1a1a, #2d2d2d, #404040)",
+              }}
+            >
               <img
                 src={
                   movie.poster_path
@@ -88,7 +94,7 @@ const Movies = () => {
                 <h5 className="card-title text-white fw-bold">{movie.title}</h5>
                 <p className="card-text text-info fw-bold">
                   {movie.release_date}
-                  <span className="float-end text-dark">
+                  <span className="float-end text-white">
                     ⭐ {movie.vote_average}
                   </span>
                 </p>
@@ -96,10 +102,10 @@ const Movies = () => {
                   {movie.overview.substring(0, 100)}...
                 </p>
               </div>
-              <div className="card-footer bg-dark text-light">
+              <div className="card-footer bg-dark text-light d-flex justify-content-center">
                 <Link
                   to={`/movie/${movie.id}`}
-                  className="btn btn-primary w-100"
+                  className="btn btn-primary w-50"
                 >
                   View Details
                 </Link>
@@ -124,7 +130,7 @@ const Movies = () => {
       {hasMore && !isLoading && (
         <div className="text-center my-4">
           <button
-            className="btn btn-info text-dark fw-bold"
+            className="btn btn-info bg-gradient text-dark fw-bold"
             onClick={handleLoadMore}
           >
             Load More Movies...
