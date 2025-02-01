@@ -87,7 +87,7 @@ const MovieDetail = () => {
         </Col>
 
         <Col md={8}>
-          <h1 className="mb-3 text-light">{movie.title}</h1>
+          <h1 className="mb-3 text-light fw-bold">{movie.title}</h1>
           <div className="mb-3">
             <Badge bg="dark" className="me-2 text-light">
               Release Date: {movie.release_date}
