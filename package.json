@@ -1,5 +1,6 @@
 {
   "name": "movie-app",
+  "homepage": "https://dfaalt.github.io/DMovies/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
